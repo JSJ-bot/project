@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm</title>
+  <script src="aws-cognito-sdk.min.js"></script>
+  <script src="amazon-cognito-identity.min.js"></script>
+  <script src="main.js"></script>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="container">
+    <p class="fsize">Sign Up</p>
+    <p style="font-size:20px">회원정보에 등록한 이메일과 이메일로 전송된 인증번호를 입력해야 회원가입이 완료</p>  
+    <input type="text" id="email" placeholder="email">
+    <input type="text" id="ConfirmCode" placeholder="인증번호 6자리 숫자 입력">
+    <input type="button" value="Confirm" onclick="ConfirmRegistration();">
+  </div>
+</body>
+</html>

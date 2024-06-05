@@ -1,0 +1,320 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+		<title>Main</title>
+		<script src="aws-sdk.min.js"></script>
+		<script src="aws-cognito-sdk.min.js"></script>
+		<script src="amazon-cognito-identity.min.js"></script>
+		<script src="main.js"></script>
+		<meta charset="UTF-8">
+		
+        <!-- meta data -->
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        
+        <!-- title of site -->
+        <title>Sisisonson Ticketing Page</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+		<!--flaticon.css-->
+        <link rel="stylesheet" href="assets/css/flaticon.css">
+
+		<!--slick.css-->
+        <link rel="stylesheet" href="assets/css/slick.css">
+		<link rel="stylesheet" href="assets/css/slick-theme.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		
+			<div id="imported-content">Loading...</div>
+		
+			<script>
+				// 다른 HTML 파일의 내용을 가져와서 #imported-content 요소에 삽입
+				fetch('index.html')
+					.then(response => response.text())
+					.then(data => {
+						document.getElementById('imported-content').innerHTML = data;
+					})
+					.catch(error => console.error('Error:', error));
+			</script>
+		
+		<script>main();</script>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+	
+		
+		<!--header-top start -->
+		<header id="header-top" class="header-top">
+			<ul>
+				<li >
+					
+					<a button id="signout">로그아웃</a>					
+				</li>
+				
+			</ul>
+					
+		</header><!--/.header-top-->
+		<!--header-top end -->
+
+		<!-- top-area Start -->
+		<section class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+			        <div class="container">
+
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                
+			                <a class="navbar-brand" href="main.html">Sisi<span>sonson</span></a>
+
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
+
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
+		    <div class="clearfix"></div>
+
+		</section><!-- /.top-area-->
+
+
+
+
+
+		<!--티켓팅 선택지 start -->
+		<section id="explore" class="explore">
+			<div class="container">
+				
+				<div class="section-header">
+					<h2>ticketing</h2>
+				</div><!--/.section-header-->
+				<div class="explore-content">
+					<div class="row">
+						<div class=" col-md-3 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="assets/images/explore/e1.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-1">
+									<h2><a href="#">히사이시 조 영화음악 콘서트 2024_서울</a></h2>
+									<p class="explore-rating-price">
+										<span class="explore-price-box">
+											
+											<span class="explore-price">70,000원</span>
+										</span>
+										 <a>롯데콘서트홀</a>
+									</p>
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button id=myButton1 class="close-btn" onclick="purchaseProduct()">구매하기</button>
+												<script>
+													document.getElementById("myButton1").addEventListener("click", function() {
+														alert("구매 완료");
+													});
+												</script>
+											</div>
+											<div class="col-sm-7">
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="assets/images/explore/e2.jpg" alt="explore image">
+									
+								</div>
+								<div class="single-explore-txt bg-theme-2">
+									<h2><a href="#">뮤지컬 〈디어 에반 핸슨〉 (Dear Evan Hansen)</a></h2>
+									<p class="explore-rating-price">
+										
+										<span class="explore-price-box">
+						
+											<span class="explore-price">70,000원</span>
+										</span>
+										 <a>충무아트센터 대극장</a>
+									</p>
+									
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button id=myButton2 class="close-btn open-btn" onclick="window.location.href='#'">구매하기</button>
+											</div>
+											<script>
+												document.getElementById("myButton2").addEventListener("click", function() {
+													alert("구매 완료");
+												});
+											</script>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="assets/images/explore/e3.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-3">
+									<h2><a href="#">뮤지컬 〈빨래〉</a></h2>
+									<p class="explore-rating-price">
+										
+										<span class="explore-price-box">
+											
+											<span class="explore-price">55,000원</span>
+										</span>
+										 <a>인터파크유니플렉스2관</a>
+									</p>
+									
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button id="myButton3" class="close-btn" onclick="window.location.href='#'">구매하기</button>
+												<script>
+													document.getElementById("myButton3").addEventListener("click", function() {
+														alert("구매 완료");
+													});
+												</script>
+											
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class=" col-md-3 col-sm-6">
+							<div class="single-explore-item">
+								<div class="single-explore-img">
+									<img src="assets/images/explore/e4.jpg" alt="explore image">
+									<div class="single-explore-img-info">
+										
+									</div>
+								</div>
+								<div class="single-explore-txt bg-theme-4">
+									<h2><a href="#">뮤지컬 〈마리 앙투아네트〉 10주년 기념공연</a></h2>
+									<p class="explore-rating-price">
+										
+										<span class="explore-price-box">
+											
+											<span class="explore-price">80,000원</span>
+										</span>
+										 <a>디큐브 링크아트센터</a>
+									</p>
+									
+									<div class="explore-open-close-part">
+										<div class="row">
+											<div class="col-sm-5">
+												<button id="myButton4" class="close-btn" onclick="window.location.href='#'">구매하기</button>
+												
+												<script>
+													document.getElementById("myButton4").addEventListener("click", function() {
+														alert("구매 완료");
+													});
+												</script>
+											</div>
+
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.explore-->
+		<!--explore end -->
+
+
+
+
+		
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+        <!--feather.min.js-->
+        <script  src="assets/js/feather.min.js"></script>
+
+        <!-- counter js -->
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+
+        <!--slick.min.js-->
+        <script src="assets/js/slick.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		     
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+        
+    </body>
+	
+</html>
